@@ -10,11 +10,11 @@ namespace Lesson9
             Converter conv = new Converter(usd: 0.088, eur: 0.075, rub: 6.49);
             System.Console.WriteLine("Введите в какую валюту хотите конвертировать сомони(usd,eur,rub) и сколько :");
             string currency = Console.ReadLine();
-            double somons = int.Parse(Console.ReadLine());
+            double somons = double.Parse(Console.ReadLine());
             System.Console.WriteLine($"{somons} сомони было сконвертировано в {conv.ConvertTo(currency, somons)} {currency}");
             System.Console.WriteLine("\nВведите из какой валюты хотите сконвертировать в сомони(usd,eur,rub) и сколько :");
             currency = Console.ReadLine();
-            double money = int.Parse(Console.ReadLine());
+            double money = double.Parse(Console.ReadLine());
             System.Console.WriteLine($"{money} {currency} было сконвертировано в {conv.ConvertFrom(currency, money)} сомони\n");
 
             //Задача 2
